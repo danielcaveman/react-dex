@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.header``;
+const Container = styled.header`
+  width: 100%;
+`;
 
 const Figures = styled.div`
   height: 17vh;
   min-height: 15rem;
-  width: 100%;
   padding: 1rem;
   background-color: #ff373a;
   display: flex;
