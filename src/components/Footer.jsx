@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.footer`
-  height: 20vh;
+  height: 25vh;
   width: 100%;
   padding: 1rem;
   background-color: #ff373a;
@@ -22,16 +22,27 @@ const SearchOuter = styled.div`
 
 const SearchInner = styled.div`
   width: 100%;
+  padding: 1rem;
   border-radius: 0.5rem;
   background-color: #00ffff;
   border: 0.1rem solid #010101;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid #000000;
+  outline: none;
 `;
 
 function Footer() {
   return (
     <Container>
       <SearchOuter>
-        <SearchInner />
+        <SearchInner>
+          <Input />
+        </SearchInner>
       </SearchOuter>
     </Container>
   );

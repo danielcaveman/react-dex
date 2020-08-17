@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.header``;
 
 const Figures = styled.div`
-  height: 20vh;
+  height: 17vh;
   width: 100%;
   padding: 1rem;
   background-color: #ff373a;
