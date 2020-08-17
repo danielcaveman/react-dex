@@ -26,6 +26,7 @@ const SearchInner = styled.div`
   border-radius: 0.5rem;
   background-color: #00ffff;
   border: 0.1rem solid #010101;
+  overflow: hidden;
 `;
 
 const Input = styled.input`
@@ -36,12 +37,36 @@ const Input = styled.input`
   outline: none;
 `;
 
+const List = styled.ul`
+  width: 100%;
+  height: 8rem;
+  list-style: none;
+  margin-top: 1rem;
+  overflow-y: scroll;
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+`;
+
 function Footer() {
   return (
     <Container>
       <SearchOuter>
         <SearchInner>
           <Input />
+          <List>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+            <ListItem>Picachu</ListItem>
+          </List>
         </SearchInner>
       </SearchOuter>
     </Container>

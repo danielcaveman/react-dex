@@ -16,4 +16,18 @@ export default createGlobalStyle`
     body {
         box-sizing: border-box;
     }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px f7f7f7; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #000000; 
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #000000; 
+    }
 `;
