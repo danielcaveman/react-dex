@@ -51,6 +51,17 @@ const ListItem = styled.li`
   font-size: 1.6rem;
 `;
 
+const ListButton = styled.button`
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    color: #808080;
+  }
+`;
+
 function Footer({ pokemons }) {
   return (
     <Container>
@@ -59,7 +70,9 @@ function Footer({ pokemons }) {
           <Input />
           <List>
             {pokemons.map((pokemon, index) => (
-              <ListItem key={index}>{pokemon.name}</ListItem>
+              <ListItem key={index}>
+                <ListButton>{pokemon.name}</ListButton>
+              </ListItem>
             ))}
           </List>
         </SearchInner>
