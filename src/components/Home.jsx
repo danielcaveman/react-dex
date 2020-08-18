@@ -21,6 +21,7 @@ const Container = styled.div`
 function Home() {
   const pokedex = new Pokedex();
 
+  const [animation, setAnimation] = useState(false);
   const [pokemon, setPokemon] = useState({});
   const [pokemons, setPokemons] = useState([]);
 
@@ -28,14 +29,21 @@ function Home() {
     pokedex.getPokemons(setPokemons);
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimation(false);
+    }, 1000);
+  }, [pokemon]);
+
   const selectPokemon = (pokemonUrl) => {
+    setAnimation(true);
     pokedex.getPokemon(pokemonUrl, setPokemon);
   };
 
   return (
     <Container>
       <Header />
-      <Main pokemon={pokemon} />
+      <Main pokemon={pokemon} animation={animation} />
       <Footer pokemons={pokemons} selectPokemon={selectPokemon} />
     </Container>
   );

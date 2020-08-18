@@ -12,10 +12,10 @@ const Image = styled.div`
   background-repeat: no-repeat;
 `;
 
-function Main({ pokemon }) {
+function Main({ pokemon, animation }) {
   return (
     <Container>
-      <Image url={pokemon} />
+      {!animation ? <Image url={pokemon} /> : <>Loading...</>}
     </Container>
   );
 }
