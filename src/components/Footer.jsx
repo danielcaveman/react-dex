@@ -51,22 +51,16 @@ const ListItem = styled.li`
   font-size: 1.6rem;
 `;
 
-function Footer() {
+function Footer({ pokemons }) {
   return (
     <Container>
       <SearchOuter>
         <SearchInner>
           <Input />
           <List>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
-            <ListItem>Picachu</ListItem>
+            {pokemons.map((pokemon, index) => (
+              <ListItem key={index}>{pokemon.name}</ListItem>
+            ))}
           </List>
         </SearchInner>
       </SearchOuter>
