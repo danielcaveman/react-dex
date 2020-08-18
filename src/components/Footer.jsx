@@ -62,7 +62,7 @@ const ListButton = styled.button`
   }
 `;
 
-function Footer({ pokemons }) {
+function Footer({ pokemons, selectPokemon }) {
   return (
     <Container>
       <SearchOuter>
@@ -71,7 +71,9 @@ function Footer({ pokemons }) {
           <List>
             {pokemons.map((pokemon, index) => (
               <ListItem key={index}>
-                <ListButton>{pokemon.name}</ListButton>
+                <ListButton onClick={() => selectPokemon(pokemon.url)}>
+                  {pokemon.name}
+                </ListButton>
               </ListItem>
             ))}
           </List>

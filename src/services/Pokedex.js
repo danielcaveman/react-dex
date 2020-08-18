@@ -15,4 +15,17 @@ export class Pokedex {
       });
     } catch (error) {}
   }
+
+  async getPokemon(url, callback) {
+    let instance = {
+      method: "GET",
+      url: url,
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    };
+    try {
+      await axios(instance).then(function (response) {
+        callback(response.data.sprites.front_default);
+      });
+    } catch (error) {}
+  }
 }

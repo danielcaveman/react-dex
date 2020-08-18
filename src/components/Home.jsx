@@ -20,19 +20,23 @@ const Container = styled.div`
 
 function Home() {
   const pokedex = new Pokedex();
-  const getPokemons = pokedex.getPokemons;
 
+  const [pokemon, setPokemon] = useState({});
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-    getPokemons(setPokemons);
+    pokedex.getPokemons(setPokemons);
   }, []);
+
+  const selectPokemon = (pokemonUrl) => {
+    pokedex.getPokemon(pokemonUrl, setPokemon);
+  };
 
   return (
     <Container>
       <Header />
-      <Main />
-      <Footer pokemons={pokemons} />
+      <Main pokemon={pokemon} />
+      <Footer pokemons={pokemons} selectPokemon={selectPokemon} />
     </Container>
   );
 }

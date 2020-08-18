@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-import ImageUrl from "../assets/pikachu.png";
-
 const Container = styled.article``;
 
 const Image = styled.div`
-  width: 20rem;
-  height: 20rem;
-  background-image: url(${ImageUrl});
+  width: 30rem;
+  height: 30rem;
+  background-image: url(${(url) => url.url});
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 `;
 
-function Main() {
+function Main({ pokemon }) {
   return (
     <Container>
-      <Image />
+      <Image url={pokemon} />
     </Container>
   );
 }
