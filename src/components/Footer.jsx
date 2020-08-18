@@ -78,7 +78,11 @@ function Footer({ pokemons, selectPokemon }) {
     <Container>
       <SearchOuter>
         <SearchInner>
-          <Input value={filter} onChange={(e) => setFilter(e.target.value)} />
+          <Input
+            placeholder="Search..."
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+          />
           <List>
             {filtered(pokemons, filter).map((pokemon, index) => (
               <ListItem key={index}>
