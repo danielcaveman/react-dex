@@ -71,7 +71,7 @@ const Triangle = styled.div`
 `;
 
 const Rectangle = styled.div`
-  width: 30vw;
+  width: 50vw;
   height: 10.5rem;
   transform: translateY(-1rem);
   background-color: #ff373a;
