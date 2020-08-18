@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.footer`
@@ -63,13 +63,24 @@ const ListButton = styled.button`
 `;
 
 function Footer({ pokemons, selectPokemon }) {
+  const [filter, setFilter] = useState("");
+
+  const filtered = (list, filter) => {
+    return filter.length
+      ? list.filter(
+          (pokemon) =>
+            pokemon.name.toLowerCase().indexOf(filter.toLowerCase()) > -1
+        )
+      : list;
+  };
+
   return (
     <Container>
       <SearchOuter>
         <SearchInner>
-          <Input />
+          <Input value={filter} onChange={(e) => setFilter(e.target.value)} />
           <List>
-            {pokemons.map((pokemon, index) => (
+            {filtered(pokemons, filter).map((pokemon, index) => (
               <ListItem key={index}>
                 <ListButton onClick={() => selectPokemon(pokemon.url)}>
                   {pokemon.name}
