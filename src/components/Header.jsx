@@ -13,7 +13,6 @@ const Figures = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1rem solid #010101;
 `;
 
 const CameraOuter = styled.div`
@@ -49,36 +48,43 @@ const Circle = styled.div`
 `;
 
 const Shapes = styled.div`
+  position: relative;
+`;
+
+const Front = styled.div`
+  position: absolute;
+  top: 0;
   display: flex;
-  transform: translateY(-1rem);
+`;
+
+const Back = styled.div`
+  display: flex;
 `;
 
 const Triangle = styled.div`
   width: 0;
   height: 0;
-  position: relative;
-  border-top: 9.5rem solid #000000;
-  border-right: 9.5rem solid transparent;
-  &:after {
-    content: "";
-    width: 0;
-    height: 0;
-    top: -10rem;
-    position: absolute;
-    border-top: 9rem solid #ff373a;
-    border-right: 9rem solid transparent;
-  }
+  border-top: ${({ size, color }) => `${size} solid ${color}`};
+  border-right: ${({ size, color }) => `${size} solid transparent`};
 `;
 
 const Rectangle = styled.div`
   width: 50vw;
-  height: 10.5rem;
-  transform: translateY(-1rem);
-  background-color: #ff373a;
-  border-bottom: 1rem solid #010101;
+  height: ${({ size }) => size};
+  background-color: ${({ color }) => color};
+`;
+
+const Line = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: ${({ color }) => color};
 `;
 
 function Header() {
+  const size = 7;
+  const border = 1;
   return (
     <Container>
       <Figures>
@@ -92,8 +98,15 @@ function Header() {
         </ColouredCicles>
       </Figures>
       <Shapes>
-        <Rectangle />
-        <Triangle />
+        <Back>
+          <Rectangle color="#000000" size={`${size}rem`} />
+          <Triangle color="#000000" size={`${size}rem`} />
+          <Line color="#000000" size={`${border}rem`} />
+        </Back>
+        <Front>
+          <Rectangle color="#ff373a" size={`${size - border}rem`} />
+          <Triangle color="#ff373a" size={`${size - border}rem`} />
+        </Front>
       </Shapes>
     </Container>
   );
