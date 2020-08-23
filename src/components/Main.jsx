@@ -25,8 +25,8 @@ const Loader = styled.div`
 `;
 
 const Image = styled.div`
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   background-image: url(${(url) => url.url});
   background-size: 100%;
   background-position: center;
