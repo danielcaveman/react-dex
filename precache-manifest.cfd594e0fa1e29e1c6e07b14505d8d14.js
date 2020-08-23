@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f357423b8a3e1a563ec8b1ac8f1979f",
+    "revision": "380ff2daa90d981c8e286ce1380217fc",
     "url": "/react-dex/index.html"
   },
   {
@@ -12,15 +12,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-dex/static/js/2.65c93ab1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1e71b92bf314329ca63",
-    "url": "/react-dex/static/js/main.a61fd60e.chunk.js"
+    "revision": "032b7013581dd99aa93d",
+    "url": "/react-dex/static/js/main.6f31abc5.chunk.js"
   },
   {
     "revision": "3f56585895e44089bd1f",
     "url": "/react-dex/static/js/runtime-main.d295d334.js"
   },
   {
-    "revision": "a8ac405db924134aac996c1dee32d04b",
-    "url": "/react-dex/static/media/pokeball.a8ac405d.png"
+    "revision": "fccb1077f94a85fd679b564a0a8da640",
+    "url": "/react-dex/static/media/pokeball.fccb1077.png"
   }
 ]);
