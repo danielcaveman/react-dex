@@ -35,7 +35,9 @@ const Image = styled.div`
 
 function Main({ pokemon, animation }) {
   return (
-    <Container>{!animation ? <Image url={pokemon} /> : <Loader />}</Container>
+    <Container>
+      {!animation ? <Image url={pokemon.url} /> : <Loader />}
+    </Container>
   );
 }
 

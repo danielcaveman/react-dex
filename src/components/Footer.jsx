@@ -62,7 +62,7 @@ const ListButton = styled.button`
   }
 `;
 
-function Footer({ pokemons, selectPokemon }) {
+function Footer({ pokemon, pokemons, selectPokemon }) {
   const [filter, setFilter] = useState("");
 
   const filtered = (list, filter) => {
@@ -84,10 +84,13 @@ function Footer({ pokemons, selectPokemon }) {
             onChange={(e) => setFilter(e.target.value)}
           />
           <List>
-            {filtered(pokemons, filter).map((pokemon, index) => (
+            {filtered(pokemons, filter).map((poke, index) => (
               <ListItem key={index}>
-                <ListButton onClick={() => selectPokemon(pokemon.url)}>
-                  {pokemon.name}
+                <ListButton
+                  disabled={pokemon.name === poke.name}
+                  onClick={() => selectPokemon(poke.url)}
+                >
+                  {poke.name}
                 </ListButton>
               </ListItem>
             ))}

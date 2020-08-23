@@ -24,7 +24,10 @@ export class Pokedex {
     };
     try {
       await axios(instance).then(function (response) {
-        callback(response.data.sprites.other["official-artwork"].front_default);
+        callback({
+          name: response.data.name,
+          url: response.data.sprites.other["official-artwork"].front_default,
+        });
       });
     } catch (error) {}
   }

@@ -43,7 +43,11 @@ function Home() {
     <Container>
       <Header />
       <Main pokemon={pokemon} animation={animation} />
-      <Footer pokemons={pokemons} selectPokemon={selectPokemon} />
+      <Footer
+        pokemon={pokemon}
+        pokemons={pokemons}
+        selectPokemon={selectPokemon}
+      />
     </Container>
   );
 }
