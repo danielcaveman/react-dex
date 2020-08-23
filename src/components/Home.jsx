@@ -7,8 +7,7 @@ import Main from "./Main";
 import { Pokedex } from "../services/Pokedex";
 
 const Container = styled.div`
-  height: 100vh;
-  min-height: 60rem;
+  min-height: 100vh;
   width: 100%;
   background-color: #ffffff;
   border: 0.8rem solid #010101;
