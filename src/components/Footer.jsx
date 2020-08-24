@@ -66,8 +66,10 @@ const ListButton = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:active {
     color: #ff373a;
+    background-color: transparent;
   }
 `;
 

@@ -27,6 +27,7 @@ export class Pokedex {
         callback({
           name: response.data.name,
           url: response.data.sprites.other["official-artwork"].front_default,
+          type: response.data.types[0].type.name,
         });
       });
     } catch (error) {}
