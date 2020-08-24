@@ -32,8 +32,8 @@ const Loader = styled.div`
 `;
 
 const Image = styled.div`
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   background-image: url(${(url) => url.url});
   background-size: 100%;
   background-position: center;
@@ -50,6 +50,7 @@ const Detail = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-bottom: 0.1rem solid #000000;
 `;
 
 const Text = styled.p`

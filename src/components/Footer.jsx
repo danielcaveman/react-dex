@@ -64,6 +64,7 @@ const ListButton = styled.button`
   width: 100%;
   background-color: transparent;
   border: none;
+  border-radius: 0.5rem;
   outline: none;
   cursor: pointer;
   &:hover,

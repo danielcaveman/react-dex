@@ -6,13 +6,17 @@ const Container = styled.header`
 `;
 
 const Figures = styled.div`
-  height: 17vh;
-  min-height: 15rem;
+  height: 13vh;
+  min-height: 12rem;
   padding: 1rem;
   background-color: #ff373a;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 600px) {
+    height: 17vh;
+  }
 `;
 
 const CameraOuter = styled.div`
