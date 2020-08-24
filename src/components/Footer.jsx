@@ -32,10 +32,18 @@ const SearchInner = styled.div`
 
 const Input = styled.input`
   width: 100%;
+  font-family: "Russo One", sans-serif;
   background-color: transparent;
   border: none;
   border-bottom: 0.1rem solid #000000;
   outline: none;
+  ::placeholder,
+  ::-webkit-input-placeholder {
+    color: #000000;
+  }
+  :-ms-input-placeholder {
+    color: #000000;
+  }
 `;
 
 const List = styled.ul`
@@ -52,13 +60,14 @@ const ListItem = styled.li`
 `;
 
 const ListButton = styled.button`
+  font-family: "Russo One", sans-serif;
   width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
   &:hover {
-    color: #808080;
+    color: #ff373a;
   }
 `;
 

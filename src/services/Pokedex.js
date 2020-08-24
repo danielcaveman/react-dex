@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const APIURL = "https://pokeapi.co/api/v2/pokemon?limit=100&offset=200";
+const APIURL = "https://pokeapi.co/api/v2/pokemon?limit=200&offset=200";
 
 export class Pokedex {
   async getPokemons(callback) {
