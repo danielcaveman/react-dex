@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/react-dex/static/js/main.50bfafbb.chunk.js",
-    "main.js.map": "/react-dex/static/js/main.50bfafbb.chunk.js.map",
+    "main.js": "/react-dex/static/js/main.d1da515b.chunk.js",
+    "main.js.map": "/react-dex/static/js/main.d1da515b.chunk.js.map",
     "runtime-main.js": "/react-dex/static/js/runtime-main.d295d334.js",
     "runtime-main.js.map": "/react-dex/static/js/runtime-main.d295d334.js.map",
     "static/js/2.65c93ab1.chunk.js": "/react-dex/static/js/2.65c93ab1.chunk.js",
     "static/js/2.65c93ab1.chunk.js.map": "/react-dex/static/js/2.65c93ab1.chunk.js.map",
     "index.html": "/react-dex/index.html",
-    "precache-manifest.38bcd3bdc85e9e9c8b8642f3749579ba.js": "/react-dex/precache-manifest.38bcd3bdc85e9e9c8b8642f3749579ba.js",
+    "precache-manifest.eea33ec65089499778186322b9b9d5d4.js": "/react-dex/precache-manifest.eea33ec65089499778186322b9b9d5d4.js",
     "service-worker.js": "/react-dex/service-worker.js",
     "static/js/2.65c93ab1.chunk.js.LICENSE.txt": "/react-dex/static/js/2.65c93ab1.chunk.js.LICENSE.txt",
     "static/media/pokeball.png": "/react-dex/static/media/pokeball.45a25940.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.d295d334.js",
     "static/js/2.65c93ab1.chunk.js",
-    "static/js/main.50bfafbb.chunk.js"
+    "static/js/main.d1da515b.chunk.js"
   ]
 }
