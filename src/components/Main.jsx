@@ -18,7 +18,7 @@ const Loader = styled.div`
   width: 20rem;
   height: 20rem;
   background-image: url(${loader});
-  background-size: cover;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   animation: ${rotateClockwise} 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
