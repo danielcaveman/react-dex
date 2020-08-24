@@ -15,8 +15,8 @@ const rotateClockwise = keyframes`
 `;
 
 const Loader = styled.div`
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   background-image: url(${loader});
   background-size: cover;
   background-position: center;
