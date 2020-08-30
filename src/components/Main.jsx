@@ -3,9 +3,9 @@ import styled, { keyframes } from "styled-components";
 
 import loader from "../assets/pokeball.png";
 
-const Container = styled.article``;
+const Container = styled.main``;
 
-const Content = styled.div`
+const Content = styled.article`
   padding: 1rem;
   display: flex;
   flex-direction: column;
