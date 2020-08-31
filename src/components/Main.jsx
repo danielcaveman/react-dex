@@ -3,13 +3,16 @@ import styled, { keyframes } from "styled-components";
 
 import loader from "../assets/pokeball.png";
 
-const Container = styled.main``;
-
-const Content = styled.article`
+const Container = styled.main`
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  border: 0.8rem solid #010101;
+  border-bottom: none;
+  border-top: none;
+  min-height: 55vh;
 `;
 
 const rotateClockwise = keyframes`
@@ -32,21 +35,15 @@ const Loader = styled.div`
 `;
 
 const Image = styled.div`
-  width: 14rem;
-  height: 14rem;
+  width: 20rem;
+  height: 20rem;
   background-image: url(${(url) => url.url});
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-
-  @media (min-width: 600px) {
-    width: 20rem;
-    height: 20rem;
-  }
 `;
 
 const Detail = styled.div`
-  margin: 2rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,19 +60,17 @@ function Main({ pokemon, animation }) {
   return (
     <Container>
       {!animation ? (
-        <Content>
-          {pokemon.name ? (
-            <>
-              <Image url={pokemon.url} />
-              <Detail>
-                <Text>Name: {pokemon.name}</Text>
-                <Text>Type: {pokemon.type}</Text>
-              </Detail>
-            </>
-          ) : (
-            <></>
-          )}
-        </Content>
+        pokemon.name ? (
+          <>
+            <Image url={pokemon.url} />
+            <Detail>
+              <Text>Name: {pokemon.name}</Text>
+              <Text>Type: {pokemon.type}</Text>
+            </Detail>
+          </>
+        ) : (
+          <></>
+        )
       ) : (
         <Loader />
       )}

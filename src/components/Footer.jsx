@@ -3,11 +3,10 @@ import styled from "styled-components";
 
 const Container = styled.footer`
   height: 25vh;
-  min-height: 15rem;
   width: 100%;
   padding: 1rem;
   background-color: #ff373a;
-  border-top: 0.8rem solid #010101;
+  border: 0.8rem solid #010101;
 `;
 
 const SearchOuter = styled.div`

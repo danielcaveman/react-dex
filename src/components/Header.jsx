@@ -3,20 +3,17 @@ import styled from "styled-components";
 
 const Container = styled.header`
   width: 100%;
+  height: 20vh;
+  border: 0.8rem solid #010101;
+  border-bottom: none;
 `;
 
 const Figures = styled.div`
-  height: 13vh;
-  min-height: 12rem;
   padding: 1rem;
   background-color: #ff373a;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media (min-width: 600px) {
-    height: 17vh;
-  }
 `;
 
 const CameraOuter = styled.div`
