@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.header`
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   border: 0.8rem solid #010101;
   border-bottom: none;
 `;
