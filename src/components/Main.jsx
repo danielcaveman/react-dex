@@ -12,7 +12,8 @@ const Container = styled.main`
   border: 0.8rem solid #010101;
   border-bottom: none;
   border-top: none;
-  min-height: 45vh;
+  height: 45vh;
+  min-height: 25rem;
 `;
 
 const rotateClockwise = keyframes`

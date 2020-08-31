@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled.header`
   width: 100%;
   height: 30vh;
+  min-height: 17rem;
   border: 0.8rem solid #010101;
   border-bottom: none;
 `;
